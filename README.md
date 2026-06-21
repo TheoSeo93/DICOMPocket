@@ -22,6 +22,17 @@ Files are handled on your device. No account, cloud upload, or server is require
 - Package selected series as ZIP files for sharing.
 - Use the app in multiple languages.
 - Work across phone, tablet, desktop, iPad, and macOS layouts.
+- On supported macOS builds, optional Segmentator overlays may run locally with TotalSegmentator.
+
+## Segmentator And Open Source Notices
+
+The optional Segmentator feature may use [TotalSegmentator](https://github.com/wasserth/TotalSegmentator), an open-source tool for anatomical segmentation of CT and MR images.
+
+DICOM Pocket uses TotalSegmentator only for local, non-diagnostic visualization. It is not affiliated with or endorsed by TotalSegmentator, University Hospital Basel, or the TotalSegmentator authors.
+
+DICOM Pocket is intended to expose only TotalSegmentator tasks that are available for any usage under Apache-2.0, such as `total` for CT and `total_mr` for MR. TotalSegmentator tasks that require a separate commercial license or are marked non-commercial-only are not included unless a separate license review and notice update is completed first.
+
+See [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md) for license, attribution, citation, and restricted-task notes.
 
 ## Privacy
 
@@ -32,6 +43,7 @@ DICOM Pocket is built around local file handling:
 - The app does not require an account for local viewing.
 - The app does not include advertising features.
 - The app does not collect, sell, or upload personal data.
+- Segmentator processing, when enabled, runs locally. DICOM Pocket does not upload selected DICOM studies to a cloud segmentation service.
 
 See [PRIVACY.md](./PRIVACY.md) for the privacy policy draft.
 
